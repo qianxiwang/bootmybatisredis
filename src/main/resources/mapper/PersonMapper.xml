@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.bootmybatisredis.mapper.PersonMapper">
+
+    <!--<resultMap id="BaseResultMap" type="com.example.bootmybatisredis.domain.Person">-->
+    <!--<result column="id" jdbcType="INTEGER" property="id"/>-->
+    <!--<result column="name" jdbcType="VARCHAR" property="name"/>-->
+    <!--<result column="age" jdbcType="INTEGER" property="age"/>-->
+    <!--<result column="address" jdbcType="VARCHAR" property="address"/>-->
+    <!--</resultMap>-->
+
+    <select id="selectPersonById" resultType="com.example.bootmybatisredis.domain.Person">
+        select * from person where id = #{id}
+    </select>
+
+</mapper>

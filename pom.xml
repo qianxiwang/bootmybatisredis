@@ -37,7 +37,6 @@
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
 
-
         <!--引入redis缓存-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
